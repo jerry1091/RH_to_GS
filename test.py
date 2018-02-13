@@ -63,11 +63,10 @@ finally:
     gc = pygsheets.authorize()
     sh = gc.open('my new ssheet')
     wks = sh.sheet1
-
     cnum = 97
     rnum = 2
-
     cell_list = []
+    
     for i in range(ord('a'), ord('f')+1):
         cell_list.append(chr(i))
 
